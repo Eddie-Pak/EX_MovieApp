@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.kitching.movieapp"
+    namespace = "com.movieapp"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.kitching.movieapp"
+        applicationId = "com.movieapp"
         minSdk = 26
         targetSdk = 35
         versionCode = 1

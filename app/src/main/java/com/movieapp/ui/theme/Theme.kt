@@ -1,4 +1,4 @@
-package com.kitching.movieapp.ui.theme
+package com.movieapp.ui.theme
 
 import android.app.Activity
 import android.os.Build

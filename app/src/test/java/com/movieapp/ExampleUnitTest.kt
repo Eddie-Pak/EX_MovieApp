@@ -1,4 +1,4 @@
-package com.kitching.movieapp
+package com.movieapp
 
 import org.junit.Test
 
