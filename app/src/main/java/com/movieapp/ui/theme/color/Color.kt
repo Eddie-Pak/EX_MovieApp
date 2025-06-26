@@ -46,6 +46,7 @@ sealed class ColorSet {
                 background = White,
                 onBackground = Black,
                 error = Red400,
+                onPrimary = White
             ),
             success = Green400,
             disabledSecondary = Grey200,
@@ -63,6 +64,7 @@ sealed class ColorSet {
                 background = White,
                 onBackground = Black,
                 error = Red400,
+                onPrimary = White
             )
         )
     }
@@ -79,6 +81,7 @@ sealed class ColorSet {
                 background = White,
                 onBackground = Purple900,
                 error = Red400,
+                onPrimary = White
             ),
             success = Green400,
             disabledSecondary = Purple700,
@@ -96,6 +99,7 @@ sealed class ColorSet {
                 background = White,
                 onBackground = Purple900,
                 error = Red400,
+                onPrimary = White
             )
         )
     }
