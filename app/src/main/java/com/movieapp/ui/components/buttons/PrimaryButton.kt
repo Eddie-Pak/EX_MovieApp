@@ -1,4 +1,4 @@
-package com.movieapp.ui.components.movie.buttons
+package com.movieapp.ui.components.buttons
 
 import androidx.annotation.StringRes
 import androidx.compose.foundation.layout.Arrangement
@@ -14,10 +14,9 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import com.movieapp.ui.theme.Paddings
-import com.movieapp.ui.theme.underlinedDialogButton
 
 @Composable
-fun UnderlineTextButton(
+fun PrimaryButton(
     modifier: Modifier = Modifier,
     @StringRes id: Int? = null,
     text: String = "",
@@ -28,8 +27,8 @@ fun UnderlineTextButton(
         shape = MaterialTheme.shapes.large,
         onClick = onClick,
         colors = ButtonDefaults.buttonColors(
-            containerColor = MaterialTheme.colorScheme.background,
-            contentColor = MaterialTheme.colorScheme.secondary,
+            containerColor = MaterialTheme.colorScheme.primary,
+            contentColor = MaterialTheme.colorScheme.onPrimary,
             disabledContentColor = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.38f),
             disabledContainerColor = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.12f)
         )
@@ -40,7 +39,7 @@ fun UnderlineTextButton(
         ) {
             Text(
                 text = id?.let { stringResource(id = id) } ?: text,
-                style = MaterialTheme.typography.underlinedDialogButton,
+                style = MaterialTheme.typography.labelLarge,
                 modifier = Modifier.padding(Paddings.small)
             )
         }
